@@ -2,7 +2,7 @@ import Combine
 import SwiftUI
 import Foundation
 
-// Pocket:Boost Day
+
 // PocketBoostDayApp.swift
 
 @main
@@ -18,26 +18,9 @@ struct PocketBoostDayApp: App {
 
     
     
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-    final class AppDelegate: NSObject, UIApplicationDelegate {
-        func application(_ application: UIApplication,
-                         supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-            if OrientationGate.allowAll {
-                return [.portrait, .landscapeLeft, .landscapeRight]
-            } else {
-                return [.portrait]
-            }
-        }
-    }
-    
-    
     
     init() {
 
-        NotificationCenter.default.post(name: Notification.Name("art.icon.loading.start"), object: nil)
-        IconSettings.shared.attach()
-        
         let state = AppState()
 
 
@@ -52,7 +35,7 @@ struct PocketBoostDayApp: App {
         
         WindowGroup {
             
-            TabSettingsView{
+      
                 
                 RootTabView()
                     .environmentObject(appState)
@@ -73,11 +56,7 @@ struct PocketBoostDayApp: App {
                     }
                 
                 
-            }
-            
-            .onAppear {
-                OrientationGate.allowAll = false
-            }
+           
             
         }
         
