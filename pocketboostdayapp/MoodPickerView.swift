@@ -2,7 +2,7 @@ import Combine
 import SwiftUI
 import Foundation
 
-// Pocket:Boost Day
+
 // UI/Components/MoodPickerView.swift
 //
 // Reusable horizontal mood picker (0…4) with colored highlight and haptics.

@@ -2,7 +2,7 @@ import Combine
 import Foundation
 import UIKit
 
-// Pocket:Boost Day
+
 // AppCore/HapticsManager.swift
 
 @MainActor

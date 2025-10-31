@@ -2,7 +2,7 @@ import Combine
 import Foundation
 import SwiftUI
 
-// Pocket:Boost Day
+
 // ViewModels/AppViewModel.swift
 
 @MainActor

@@ -2,7 +2,7 @@ import Combine
 import SwiftUI
 import Foundation
 
-// Pocket:Boost Day
+
 // UI/Components/ConfirmDialog.swift
 //
 // Reusable confirmation dialog utilities.

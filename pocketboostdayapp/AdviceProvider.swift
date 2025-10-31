@@ -1,11 +1,10 @@
 import Combine
 import Foundation
 
-// Pocket:Boost Day
+
 // Resources/AdviceProvider.swift
 //
-// EN-only, local tips (no networking).
-// Deterministic selection by day key to keep the “advice of the day” stable.
+
 
 public enum AdviceProvider {
 

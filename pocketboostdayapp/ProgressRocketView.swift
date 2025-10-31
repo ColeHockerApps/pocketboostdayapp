@@ -2,7 +2,7 @@ import Combine
 import SwiftUI
 import Foundation
 
-// Pocket:Boost Day
+
 // UI/Components/ProgressRocketView.swift
 //
 // Reusable progress components with a rocket marker.

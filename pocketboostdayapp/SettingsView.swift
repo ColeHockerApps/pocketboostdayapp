@@ -3,7 +3,8 @@ import SwiftUI
 import Foundation
 import UniformTypeIdentifiers
 
-// Pocket:Boost Day
+
+
 // UI/Settings/SettingsView.swift
 
 public struct SettingsView: View {
@@ -277,11 +278,11 @@ public struct SettingsView: View {
             HStack {
                 Label("Version", systemImage: "number")
                 Spacer()
-                Text("1.0")
+                Text("1.01")
                     .foregroundStyle(.secondary)
             }
             Button {
-                if let url = URL(string: "https://www.termsfeed.com/live/3c7cb38a-87d1-4781-8488-c054e4a55dc3") {
+                if let url = URL(string: "https://www.termsfeed.com/live/303df008-c4ed-4c30-8173-2fc58abcb937") {
                     haptics.tap()
                     openURL(url)
                 } else {

@@ -138,18 +138,18 @@ public final class LocalStore: ObservableObject {
     }
 
     public func reorderSteps(from source: IndexSet, to destination: Int) {
-        // Локальная перестановка без SwiftUI
+
         var arr = steps
 
-        // 1) Берём элементы по исходным индексам (в возрастающем порядке)
+
         let moving = source.sorted().map { arr[$0] }
 
-        // 2) Удаляем их из массива (по убыванию индексов, чтобы не смещать оставшиеся)
+
         for i in source.sorted(by: >) {
             arr.remove(at: i)
         }
 
-        // 3) Корректируем целевой индекс с учётом удаления элементов слева от destination
+
         var dest = destination
         for i in source {
             if i < destination { dest -= 1 }
