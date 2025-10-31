@@ -12,14 +12,14 @@ workflows:
       xcode: latest
       ios_signing: 
         distribution_type: app_store
-        bundle_identifier: com.spencerory.pocketboostapp
+        bundle_identifier: com.spencerory.pocketday
       vars:
         # Т.к. CocoaPods = no — используем .xcodeproj:
         XCODE_PROJECT: "pocketboostdayapp.xcodeproj"
         # Если перейдёшь на CocoaPods, вместо PROJECT используй:
         # XCODE_WORKSPACE: "pocketboostdayapp.xcworkspace"
         XCODE_SCHEME: "pocketboostdayapp"
-        APP_STORE_APPLE_ID: 6754088896
+        APP_STORE_APPLE_ID: 6754756440
 
     cache:
       cache_paths:
